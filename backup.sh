@@ -18,7 +18,7 @@ tar -czvf "$assets_prefixname"_"$date".tar.gz --absolute-names "$assets_dir_name
 echo ".........."
 
 
-### Uploading && Alert to slack
+### Uploading && Alert to slack ###
 curl -T "$db_prefixname"_"$date".tar.gz ftp://"$backup_host"/"$db_backuphost_dir"/"$db_prefixname"_"$date".tar.gz --user "$backup_host_user":"$backup_host_pass"
 if [ $? == 0 ]
 then
@@ -41,7 +41,7 @@ else
   echo ".........."
 fi
 
-### Cleaning
+### Cleaning ###
 rm -r "$db_prefixname"* "$assets_dir_name"
 rm *.gz
 echo ".........."
