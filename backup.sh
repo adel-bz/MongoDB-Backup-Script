@@ -1,6 +1,6 @@
 # !/bin/bash
 
-### Reading ENV
+### Reading ENV ###
 source $(dirname $BASH_SOURCE)/.env
 
 ### Database Backup ###
