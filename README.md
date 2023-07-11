@@ -72,7 +72,7 @@ You can find all Variables on the ```.env```file.
 
 ```
 volumes:
-   - /srv/adel-db:/data/db:z
+   - /srv/adel-db:/data/db:z ### db_host_volume:/srv/adel-db
 ```
 
 ```db_port:``` Your database port, ```27017``` is default port for MongoDB.
@@ -89,7 +89,7 @@ volumes:
 
 ```
 volumes:
-  - /srv/adel-assets:/app/public/uploads:z
+  - /srv/adel-assets:/app/public/uploads:z  ### assets_host_volume:/srv/adel-assets
 ```
 
 ```assets_dir_name:```Your assets directory name, for instance ```adel-assets```.
