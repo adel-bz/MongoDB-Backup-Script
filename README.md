@@ -2,7 +2,7 @@
 
 # Overview
 This bash script project is for the Backup of your data from the MongoDB database on a Docker container and the project Assets files.
-This project Backup all your necessary data such as users images and videos, and other information on the database, and then sends data to a backup server.
+This project Backup all your necessary data such as users images and videos, and other information on the database, in addition then sends data to a backup server.
 
 
 ![Screenshot from 2023-07-10 12-37-10](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/7380833e-21e8-4146-bd49-2d4090251c33)
