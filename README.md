@@ -68,7 +68,7 @@ You can find all Variables on the ```.env```file.
 
 ```db_container_volum:``` Your database data location on container, ```/data/db``` is a default location for MongoDB.
 
-```db_host_volume:``` This is your database data location on the server, this location is mounted with ```/data/db``` on your docker container, like the below code in a docker-compose file:
+```db_host_volume:``` This is your database data location on the server, this location is mounted with ```/data/db``` on your Docker container, like the below code in a docker-compose file:
 
 ```
 volumes:
