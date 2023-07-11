@@ -12,8 +12,8 @@ tar -czvf "$db_prefixname"_"$date".tar.gz --absolute-names "$db_prefixname"_"$da
 
 
 ### Assets Backup ###
-sleep 2
 cp -rf "$assets_host_volume" .
+sleep 2
 tar -czvf "$assets_prefixname"_"$date".tar.gz --absolute-names "$assets_dir_name"
 echo ".........."
 
