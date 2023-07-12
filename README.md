@@ -90,7 +90,7 @@ You can find all Variables on the ```.env```file.
 
 ```
 volumes:
-   - /srv/adel-db:/data/db:z ### db_host_volume:/srv/adel-db
+   - /srv/adel-db:/data/db:z  ### db_host_volume:/srv/adel-db
 ```
 
 ```db_port:``` Your database port, ```27017``` is default port for MongoDB.
