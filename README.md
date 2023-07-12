@@ -13,7 +13,6 @@ Also, you can use this project on all os that can run the bash script.
 - You need a backup server with a FTP connection.
 - You should install FTP and tar package on your server. (if doesn't exist)
 
-
 # Usage
 ### Clone Project
 Clone the project and go to the project directory.
@@ -54,9 +53,28 @@ https://crontab.guru/
 
 ```>> /var/log/backup.log``` All logs after running the backup script will write on ```backup.log``` in ```/var/log/``` directory.
 
+# Backup Strategy
+Our Backup strategy has four steps, we'll talk about these steps and you can get some information about this project.
+
+### Database Backup
+We have three lines of commands for this step. first of all, we create a dump from our database and move that file to /data/db which is mounted with the host.
+After that, we move the dump file from the mounted directory to the directory we want. and for the last move in this step, we compress the dump file.
+
+### Assets Backup
+This is the second step and is very simple. we just copy the assets directory from their location on the host to a directory we want and then we compress the assets directory.
+
+![Screenshot from 2023-07-12 12-53-40](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/bff8d80f-dff5-4dda-af44-8f47ed3da7a6)
+
+### Uploading Backups to Backup Server && Sending Alert to Slack
+This is one of the most important steps. In this step, we upload our backups and send alerts to Slack. Also if uploading is unsuccessful, we'll get an unsuccessful alert on Slack.
+![Screenshot from 2023-07-12 14-01-19](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/3aeec435-0550-4267-9a48-7e594ebff965)
+
+### Cleaning
+In the last step, we remove all backup files from the host.
+![Screenshot from 2023-07-12 14-14-12](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/2bb19d75-2482-4195-9820-82e9b0f3fe6f)
+
 # Environment Variables
 You can find all Variables on the ```.env```file.
-
 
 ![Screenshot from 2023-07-10 15-03-24](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/d0c7f876-ff0b-439b-bb53-26e882fbcfee)
 
