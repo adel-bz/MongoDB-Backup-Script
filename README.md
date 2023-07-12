@@ -57,7 +57,7 @@ https://crontab.guru/
 Our Backup strategy has four steps, we'll talk about these steps and you can get some information about this project.
 
 ### Database Backup
-We have three lines of commands for this step. first of all, we create a dump from our database and move that file to /data/db which is mounted with the host.
+We have three lines of commands for this step. first of all, we create a dump from our database and move that file to ```/data/db``` which is mounted with the host.
 After that, we move the dump file from the mounted directory to the directory we want. and for the last move in this step, we compress the dump file.
 
 ### Assets Backup
