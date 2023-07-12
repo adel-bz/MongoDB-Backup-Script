@@ -53,7 +53,7 @@ https://crontab.guru/
 
 ```>> /var/log/backup.log``` All logs after running the backup script will write on ```backup.log``` in ```/var/log/``` directory.
 
-# Backup Strategy
+# Backup Plan
 Our Backup strategy has four steps, we'll talk about these steps and you can get some information about this project.
 
 ### Database Backup
