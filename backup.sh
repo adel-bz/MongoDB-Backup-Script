@@ -5,7 +5,7 @@ source $(dirname $BASH_SOURCE)/.env
 
 ### Database Backup ###
 printf ""$GREEN"......... BACKUP START ......... "$NC" \t "$date" \t Done\n"
-sudo docker exec "$db_container_name" mongodump --host=localhost --port="$db_port" --username="$db_username" --password="$db_pass" --out="$db_container_volume"/"$db_prefixname"_"$date"|
+sudo docker exec "$db_container_name" mongodump --host=localhost --port="$db_port" --username="$db_username" --password="$db_pass" --out="$db_container_volume"/"$db_prefixname"_"$date"
 sleep 2
 mv "$db_host_volume"/"$db_prefixname"_"$date" .
 tar -czvf "$db_prefixname"_"$date".tar.gz --absolute-names "$db_prefixname"_"$date"
