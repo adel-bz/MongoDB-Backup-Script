@@ -18,7 +18,7 @@ Also, you can use this project on all os that can run the bash script.
 Clone the project and go to the project directory.
 ```
 git clone https://github.com/adel-bz/MongoDB-Bcakup-Script.git
-cd MongoDB-Bcakup-Script
+cd MongoDB-Bcakup-Scrip.
 ```
 ### Change Variables
 Change the Environment Variables on the ```.env``` file. Those variables are instances.
@@ -45,7 +45,7 @@ You can use the below link to write a schedule for running cronjob.
 
 https://crontab.guru/
 
-```bash /dir/MongoDB-Bcakup-Script/backup.sh```  This command runs backup script.
+```bash /dir/MongoDB-Bcakup-Script/backup.sh```  This command runs the backup script.
 
 > **Note**
 > 
@@ -84,7 +84,7 @@ You can find all Variables on the ```.env```file.
 
 ```db_container_name:``` Your database container name, like ```db-mongo```.
 
-```db_container_volum:``` Your database data location on container, ```/data/db``` is a default location for MongoDB.
+```db_container_volum:``` Your database data location on the container, ```/data/db``` is a default location for MongoDB.
 
 ```db_host_volume:``` This is your database data location on the server, this location is mounted with ```/data/db``` on your Docker container, like the below code in a docker-compose file:
 
@@ -93,7 +93,7 @@ volumes:
    - /srv/adel-db:/data/db:z  ### db_host_volume:/srv/adel-db
 ```
 
-```db_port:``` Your database port, ```27017``` is default port for MongoDB.
+```db_port:``` Your database port, ```27017``` is the default port for MongoDB.
 
 ```db_user:``` MongoDB username, As an example ```adel```.
 
@@ -101,7 +101,7 @@ volumes:
 
 ### Assests ENV
 
-```assets_prefixname:``` It is just a prefix name for better-managing Backup files. As an example ```assetbackup```.
+```assets_prefixname:``` It is just a prefix name for better managing Backup files. As an example ```assetbackup```.
 
 ```assets_host_volume:``` This is your assets files location on the server, this location is mounted with your project assets location on a docker container, like the below code in a docker-compose file:
 
@@ -114,7 +114,7 @@ volumes:
 
 > **Note**
 > 
-> Your ```assets_dir_name``` must be same with ```assets_host_volume``` directory. For example if your ```assets_host_volume``` is ```/srv/adel-assets```  therefor ```assets_dir_name``` will be ```adel-assets```.
+> Your ```assets_dir_name``` must be the same with the ```assets_host_volume``` directory. For example, if your ```assets_host_volume``` is ```/srv/adel-assets```  therefor ```assets_dir_name``` will be ```adel-assets```.
 
 
 ### Backup Host ENV
