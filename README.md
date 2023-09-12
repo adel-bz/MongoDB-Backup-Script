@@ -11,7 +11,7 @@ Also, you can use this project on all os that can run the bash script.
 
 # Requirements
 - You need a backup server with a FTP connection.
-- You should install FTP and tar package on your server. (if doesn't exist)
+- You should install FTP and tar package on your server. (if it doesn't exist)
 
 # Usage
 ### Clone Project
