@@ -1,7 +1,7 @@
 # MongoDB-Backup-Script
 
 - [Introduction](https://github.com/adel-bz/MongoDB-Bcakup-Script#introduction)
-- Features
+- [Features](https://github.com/adel-bz/MongoDB-Bcakup-Script/blob/main/README.md#features)
 - [Requirements](https://github.com/adel-bz/MongoDB-Bcakup-Script#requirements)
 - [Usage](https://github.com/adel-bz/MongoDB-Bcakup-Script#usage)
 - [Backup Plans](https://github.com/adel-bz/MongoDB-Bcakup-Script#backup-plans)
