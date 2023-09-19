@@ -1,6 +1,13 @@
 # MongoDB-Backup-Script
 
-# Overview
+- Introduction
+- Requirements
+- Usage
+- Backup Plans
+- Environment Variables
+- Contributing
+
+# Introduction
 This bash script project is for the Backup of your data from the MongoDB database on a Docker container and the project Assets files.
 This project Backup all your necessary data such as users' images and videos, and other information on the database. In addition, sends data to a backup server.
 
@@ -53,7 +60,7 @@ https://crontab.guru/
 
 ```>> /var/log/backup.log``` All logs after running the backup script will write on ```backup.log``` in ```/var/log/``` directory.
 
-# Backup Plan
+# Backup Plans
 Our Backup strategy has four steps, we'll talk about these steps and you can get some information about this project.
 
 ### Database Backup
@@ -137,3 +144,21 @@ volumes:
 ```GREEN, RED, NC:``` Colors.
 
 ```slack_url:``` Slack webhook for sending an alert to Slack.
+
+# Contributing
+We welcome contributions from the community to improve the MongoDB Backup Script. To contribute:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature/fix:
+```
+git checkout -b feature-name
+```
+3. Commit your changes and push to your forked repository:
+```
+git commit -m "Add a descriptive commit message"
+git push origin feature-name
+```
+4. Create a pull request. Your changes will be reviewed, and once approved, they will be merged into the main branch.
+
+Please ensure your code adheres to the project's coding standards.
