@@ -4,7 +4,6 @@
 - [Features](https://github.com/adel-bz/MongoDB-Bcakup-Script/blob/main/README.md#features)
 - [Requirements](https://github.com/adel-bz/MongoDB-Bcakup-Script#requirements)
 - [Usage](https://github.com/adel-bz/MongoDB-Bcakup-Script#usage)
-- [Backup Plans](https://github.com/adel-bz/MongoDB-Bcakup-Script#backup-plans)
 - [Environment Variables](https://github.com/adel-bz/MongoDB-Bcakup-Script#environment-variables)
 - [Contributing](https://github.com/adel-bz/MongoDB-Bcakup-Script#contributing)
 
@@ -74,26 +73,6 @@ https://crontab.guru/
 > That cronjob was an example, and you should change ```/dir``` with your backup script directory location on the server.
 
 ```>> /var/log/backup.log``` All logs after running the backup script will write on ```backup.log``` in ```/var/log/``` directory.
-
-# Backup Plans
-Our Backup strategy has four steps, we'll talk about these steps and you can get some information about this project.
-
-### Database Backup
-We have three lines of commands for this step. first of all, we create a dump from our database and move that file to ```/data/db``` which is mounted with the host.
-After that, we move the dump file from the mounted directory to the directory we want. and for the last move in this step, we compress the dump file.
-
-### Assets Backup
-This is the second step and is very simple. we just copy the assets directory from their location on the host to a directory we want and then we compress the assets directory.
-
-![Screenshot from 2023-07-12 12-53-40](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/bff8d80f-dff5-4dda-af44-8f47ed3da7a6)
-
-### Uploading Backups to Backup Server && Sending Alert to Slack
-This is one of the most important steps. In this step, we upload our backups and send alerts to Slack. Also if uploading is unsuccessful, we'll get an unsuccessful alert on Slack.
-![Screenshot from 2023-07-12 14-01-19](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/3aeec435-0550-4267-9a48-7e594ebff965)
-
-### Cleaning
-In the last step, we remove all backup files from the host.
-![Screenshot from 2023-07-12 14-14-12](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/2bb19d75-2482-4195-9820-82e9b0f3fe6f)
 
 # Environment Variables
 You can find all Variables on the ```.env```file.
