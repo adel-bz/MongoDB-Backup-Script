@@ -1,11 +1,12 @@
 # MongoDB-Backup-Script
 
-- Introduction
-- Requirements
-- Usage
-- Backup Plans
-- Environment Variables
-- Contributing
+- [Introduction](https://github.com/adel-bz/MongoDB-Bcakup-Script#introduction)
+- Features
+- [Requirements](https://github.com/adel-bz/MongoDB-Bcakup-Script#requirements)
+- [Usage](https://github.com/adel-bz/MongoDB-Bcakup-Script#usage)
+- [Backup Plans](https://github.com/adel-bz/MongoDB-Bcakup-Script#backup-plans)
+- [Environment Variables](https://github.com/adel-bz/MongoDB-Bcakup-Script#environment-variables)
+- [Contributing](https://github.com/adel-bz/MongoDB-Bcakup-Script#contributing)
 
 # Introduction
 This bash script project is for the Backup of your data from the MongoDB database on a Docker container and the project Assets files.
@@ -14,11 +15,25 @@ This project Backup all your necessary data such as users' images and videos, an
 
 ![Screenshot from 2023-07-10 12-37-10](https://github.com/adel-bz/MongoDB-Bcakup-Script/assets/45201934/7380833e-21e8-4146-bd49-2d4090251c33)
 
-Also, you can use this project on all os that can run the bash script.
+Also, you can use this project on all OS that can run the bash script.
+
+# Features
+- Automated MongoDB database backups.
+- Automated project's assets backups.
+- Configurable backup schedules.
+- Backup compression to save storage space.
+- Removing old backups automatically.
+- Support for local and remote backup destinations.
+- Alert notifications for backup status.
+- Highly customizable through environment variables.
+- Open-source and easily extendable.
 
 # Requirements
-- You need a backup server with a FTP connection.
-- You should install FTP and tar package on your server. (if it doesn't exist)
+- A Linux-based operating system (e.g., Ubuntu, CentOS).
+- Bash shell (usually pre-installed on Linux systems).
+- FTP server (Backup server) for remote backups.
+- MongoDB installed and configured. (as a Docker container)
+
 
 # Usage
 ### Clone Project
@@ -143,7 +158,12 @@ volumes:
 
 ```GREEN, RED, NC:``` Colors.
 
+```rmdate:```Removing's date for removing old backup.
+
 ```slack_url:``` Slack webhook for sending an alert to Slack.
+
+```discord_url:``` Discord webhook for sending an alert to Discord.
+
 
 # Contributing
 We welcome contributions from the community to improve the MongoDB Backup Script. To contribute:
